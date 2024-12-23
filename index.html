@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>CRUD</title>
+</head>
+<body style="color:whitesmoke ; background-color: #2b3961;">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>CRUD</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="member-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter Your First Name">
+                </div>
+                <div class="col-10 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter Your Last Name">
+                </div>
+                <div class="col-10 mb-3">
+                    <label for="idNo" class="form-label">ID No</label>
+                    <input type="text" class="form-control" id="idNo" placeholder="Enter Your ID Numbers">
+                </div>
+                <div class="col-10">
+                    <button class="btn btn-warning add-btn" type="submit" value="Submit">Submit</button>
+                </div>
+            </form>
+            <div class="col-10 mt-5">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>ID No</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="member-list">
+                        <td>Jack</td>
+                        <td>Zaripa</td>
+                        <td>110378</td>
+                        <td><a href="#" class="btn btn-info edit">Edit</a>
+                            <a href="#" class="btn btn-danger delete">Delete</a></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
